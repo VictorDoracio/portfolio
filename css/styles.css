@@ -1,0 +1,309 @@
+/* ============================================================
+   PORTFÓLIO — Victor Hugo Doracio
+   CSS custom (camada sobre Bootstrap 5.3) — Tema Rosa/Vinho
+   ============================================================ */
+
+/* ============================================================
+   1. VARIÁVEIS DE TEMA
+   ============================================================ */
+:root,
+[data-bs-theme="dark"] {
+  --vh-bg: #1a1416;           
+  --vh-surface: #261c1f;      
+  --vh-surface-2: #33262a;    
+  --vh-text: #F8E5E9;         
+  --vh-text-muted: #E4A5B5;   
+  --vh-border: rgba(196, 113, 135, 0.2); 
+  --vh-accent: #C47187;       
+  --vh-accent-strong: #9D4861;
+  --vh-accent-contrast: #ffffff;
+  --vh-success: #22c55e;
+  --vh-danger: #ef4444;
+  --vh-radius: 0.75rem;
+  --vh-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+  --vh-shadow-hover: 0 1rem 2rem rgba(157, 72, 97, 0.25);
+
+  --bs-body-bg: var(--vh-bg);
+  --bs-body-color: var(--vh-text);
+  --bs-secondary-color: var(--vh-text-muted);
+  --bs-border-color: var(--vh-border);
+  --bs-tertiary-bg: var(--vh-surface);
+  --bs-primary: var(--vh-accent-strong);
+  --bs-primary-rgb: 157, 72, 97;
+  --bs-link-color: var(--vh-accent);
+  --bs-link-color-rgb: 196, 113, 135;
+  --bs-link-hover-color: #E4A5B5;
+}
+
+[data-bs-theme="light"] {
+  --vh-bg: #FDF6F8;           
+  --vh-surface: #FFFFFF;      
+  --vh-surface-2: #F8E5E9;    
+  --vh-text: #3b131e;         
+  --vh-text-muted: #762640;   
+  --vh-border: rgba(118, 38, 64, 0.15);
+  --vh-accent: #9D4861;       
+  --vh-accent-strong: #762640;
+  --vh-accent-contrast: #ffffff;
+  --vh-shadow: 0 0.5rem 1rem rgba(118, 38, 64, 0.08);
+  --vh-shadow-hover: 0 1rem 2rem rgba(157, 72, 97, 0.18);
+
+  --bs-body-bg: var(--vh-bg);
+  --bs-body-color: var(--vh-text);
+  --bs-secondary-color: var(--vh-text-muted);
+  --bs-border-color: var(--vh-border);
+  --bs-tertiary-bg: var(--vh-surface);
+  --bs-primary: var(--vh-accent-strong);
+  --bs-primary-rgb: 118, 38, 64;
+  --bs-link-color: var(--vh-accent);
+  --bs-link-color-rgb: 157, 72, 97;
+  --bs-link-hover-color: #762640;
+}
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--vh-bg);
+  color: var(--vh-text);
+  padding-top: 4.75rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .section-title {
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* ============================================================
+   3. SKIP LINK
+   ============================================================ */
+.skip-link:focus {
+  position: fixed; top: 0.5rem; left: 0.5rem; z-index: 2000;
+  padding: 0.6rem 1rem; background: var(--vh-accent-strong); color: var(--vh-accent-contrast);
+  border-radius: 0.5rem; font-weight: 600; text-decoration: none;
+  box-shadow: var(--vh-shadow); outline: 2px solid var(--vh-accent);
+}
+
+/* ============================================================
+   4. NAVBAR
+   ============================================================ */
+.navbar {
+  background-color: var(--vh-surface) !important;
+  border-bottom: 1px solid var(--vh-border);
+  transition: background-color 0.25s ease;
+}
+
+.navbar .nav-link {
+  color: var(--vh-text-muted);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible,
+.navbar .nav-link.active {
+  color: var(--vh-accent);
+}
+
+.brand-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; border-radius: 0.5rem;
+  background: linear-gradient(135deg, var(--vh-accent-strong), var(--vh-accent));
+  color: var(--vh-accent-contrast); font-weight: 700; font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+#theme-toggle {
+  width: 2.25rem; height: 2.25rem; display: inline-flex;
+  align-items: center; justify-content: center; border-radius: 50%;
+  color: var(--vh-text-muted); border-color: var(--vh-border);
+}
+
+#theme-toggle:hover { color: var(--vh-accent); border-color: var(--vh-accent); }
+
+/* ============================================================
+   5. SEÇÕES E TÍTULOS
+   ============================================================ */
+.section-padding { padding-block: 3.5rem; }
+.section-title { position: relative; padding-bottom: 0.75rem; font-weight: 700; }
+.section-title::after {
+  content: ""; position: absolute; left: 0; bottom: 0;
+  width: 48px; height: 3px; background: var(--vh-accent); border-radius: 2px;
+}
+.text-center .section-title::after { left: 50%; transform: translateX(-50%); }
+
+/* ============================================================
+   6. HERO
+   ============================================================ */
+.hero-photo {
+  width: 200px; height: 200px; max-width: 100%; object-fit: cover;
+  border: 4px solid var(--vh-surface); box-shadow: var(--vh-shadow);
+  background: var(--vh-surface-2);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--vh-accent-strong);
+  --bs-btn-border-color: var(--vh-accent-strong);
+  --bs-btn-hover-bg: var(--vh-accent);
+  --bs-btn-hover-border-color: var(--vh-accent);
+  --bs-btn-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: var(--vh-accent);
+  --bs-btn-active-border-color: var(--vh-accent);
+  --bs-btn-focus-shadow-rgb: 196, 113, 135;
+}
+
+/* ============================================================
+   7. SKILLS / BADGES
+   ============================================================ */
+.skill-badge {
+  font-size: 0.85rem; font-weight: 500; padding: 0.45em 0.85em;
+  border-radius: 50rem; border: 1px solid transparent; line-height: 1.2;
+}
+
+.badge-hard {
+  background: rgba(196, 113, 135, 0.15);
+  color: var(--vh-accent);
+  border-color: rgba(196, 113, 135, 0.4);
+}
+[data-bs-theme="light"] .badge-hard {
+  background: rgba(157, 72, 97, 0.1); color: #762640; border-color: rgba(157, 72, 97, 0.35);
+}
+
+.badge-soft {
+  background: rgba(228, 165, 181, 0.15);
+  color: #E4A5B5;
+  border-color: rgba(228, 165, 181, 0.4);
+}
+[data-bs-theme="light"] .badge-soft {
+  background: rgba(228, 165, 181, 0.3); color: #9D4861; border-color: rgba(196, 113, 135, 0.35);
+}
+
+/* ============================================================
+   8. CARDS (Áreas, Tendências, Projetos)
+   ============================================================ */
+.area-card, .project-card {
+  background: var(--vh-surface);
+  border: 1px solid var(--vh-border);
+  border-radius: var(--vh-radius);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.area-card:hover, .project-card:hover,
+.area-card:focus-within, .project-card:focus-within {
+  transform: translateY(-4px); box-shadow: var(--vh-shadow-hover); border-color: var(--vh-accent);
+}
+
+.area-card .card-body, .project-card .card-body { color: var(--vh-text); }
+
+.project-thumb {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-top-left-radius: var(--vh-radius); border-top-right-radius: var(--vh-radius);
+  background: var(--vh-surface-2);
+}
+
+/* ============================================================
+   9. FORMULÁRIO DE CONTATO
+   ============================================================ */
+#contact-form {
+  background: var(--vh-surface);
+  border: 1px solid var(--vh-border);
+  border-radius: var(--vh-radius);
+}
+
+#contact-form .form-label { color: var(--vh-text); font-weight: 500; }
+
+#contact-form .form-control {
+  background: var(--vh-bg); border-color: var(--vh-border); color: var(--vh-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#contact-form .form-control::placeholder { color: var(--vh-text-muted); opacity: 0.7; }
+
+#contact-form .form-control:focus {
+  background: var(--vh-bg); color: var(--vh-text);
+  border-color: var(--vh-accent); box-shadow: 0 0 0 0.2rem rgba(196, 113, 135, 0.25);
+}
+
+[data-bs-theme="light"] #contact-form .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(157, 72, 97, 0.2);
+}
+
+#contact-feedback:empty { display: none; }
+#contact-feedback .alert { margin-bottom: 0; }
+
+/* ============================================================
+   10. PAINEL ADMIN
+   ============================================================ */
+#admin { background: var(--vh-bg); border-top: 1px solid var(--vh-border); }
+
+#admin .table {
+  --bs-table-bg: var(--vh-surface); --bs-table-color: var(--vh-text);
+  --bs-table-border-color: var(--vh-border); --bs-table-striped-bg: var(--vh-surface-2);
+  --bs-table-striped-color: var(--vh-text); --bs-table-hover-bg: rgba(196, 113, 135, 0.1);
+  --bs-table-hover-color: var(--vh-text); margin-bottom: 0;
+}
+
+#admin .table > :not(caption) > * > * {
+  background-color: var(--bs-table-bg); color: var(--bs-table-color);
+}
+
+#admin .card { border: 1px solid var(--vh-border); border-radius: var(--vh-radius); overflow: hidden; }
+#admin-feedback:empty { display: none; }
+#admin-feedback .alert { margin-bottom: 0; }
+
+/* ============================================================
+   11. RODAPÉ
+   ============================================================ */
+.footer {
+  background: var(--vh-surface) !important; border-top: 1px solid var(--vh-border) !important;
+  color: var(--vh-text-muted);
+}
+
+.footer .footer-brand { color: var(--vh-text); font-weight: 600; transition: color 0.2s ease; }
+.footer .footer-brand:hover, .footer .footer-brand:focus-visible { color: var(--vh-accent); }
+.footer a { color: var(--vh-text-muted); transition: color 0.2s ease; }
+.footer a:hover, .footer a:focus-visible { color: var(--vh-accent); }
+
+/* ============================================================
+   12. MODAIS
+   ============================================================ */
+.modal-content {
+  background: var(--vh-surface); border: 1px solid var(--vh-border);
+  border-radius: var(--vh-radius); color: var(--vh-text);
+}
+.modal-header, .modal-footer { border-color: var(--vh-border); }
+
+/* ============================================================
+   13. ACESSIBILIDADE E BREAKPOINTS
+   ============================================================ */
+:focus-visible { outline: 2px solid var(--vh-accent); outline-offset: 2px; }
+.btn:focus-visible { outline: none; box-shadow: 0 0 0 0.25rem rgba(196, 113, 135, 0.4); }
+[data-bs-theme="light"] .btn:focus-visible { box-shadow: 0 0 0 0.25rem rgba(157, 72, 97, 0.3); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+@media (min-width: 768px) {
+  body { padding-top: 5rem; } html { scroll-padding-top: 5.5rem; }
+  .section-padding { padding-block: 4.5rem; } .hero-photo { width: 240px; height: 240px; }
+}
+
+@media (min-width: 1280px) {
+  .section-padding { padding-block: 5rem; } .hero-photo { width: 280px; height: 280px; }
+}
+
+@media (max-width: 359.98px) {
+  .section-padding { padding-block: 2.5rem; } .hero-photo { width: 160px; height: 160px; }
+}

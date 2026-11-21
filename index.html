@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio web dinâmico de Victor Hugo Doracio — Trainee TIC e desenvolvedor frontend em formação (HTML, CSS, JavaScript e Bootstrap).">
+  <meta name="author" content="Victor Hugo Doracio">
+  <meta name="theme-color" content="#1a1416">
+  <title>Victor Hugo Doracio — Portfólio | Trainee TIC</title>
+
+  <!-- Bootstrap 5.3.3 — CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts: Inter (corpo) + Poppins (títulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS custom -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="visually-hidden-focusable skip-link" href="#inicio">Pular para o conteúdo principal</a>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
+          <span class="brand-badge" aria-hidden="true">VH</span>
+          <span>Victor Hugo Doracio</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button id="theme-toggle" class="btn btn-sm btn-outline-secondary" type="button"
+                  aria-label="Alternar tema claro/escuro" aria-pressed="false">
+            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                  aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tendencias">Tendências</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO / APRESENTAÇÃO -->
+    <section id="inicio" class="section-padding" aria-labelledby="hero-titulo">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-5 text-center text-md-start">
+            <img src="assets/img/Perfil.jpeg"
+                 alt="Foto de perfil de Victor Hugo Doracio"
+                 class="hero-photo rounded-circle img-fluid shadow"
+                 width="200" height="200">
+          </div>
+          <div class="col-12 col-md-7 text-center text-md-start">
+            <h1 id="hero-titulo" class="display-5 fw-bold mb-2">Victor Hugo Doracio</h1>
+            <p class="lead text-primary-emphasis mb-3">Trainee TIC</p>
+            <p class="mb-4">
+              Desenvolvedor frontend em formação, focado em criar interfaces
+              responsivas e acessíveis. Tenho experiência com <strong>HTML5, CSS3,
+              JavaScript e Bootstrap</strong>, além de conhecimentos complementares
+              em Python, Java e SQL.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-md-start">
+              <a href="#projetos" class="btn btn-primary btn-lg">
+                <i class="bi bi-collection" aria-hidden="true"></i> Ver Projetos
+              </a>
+              <a href="#contato" class="btn btn-outline-secondary btn-lg">
+                <i class="bi bi-envelope" aria-hidden="true"></i> Contato
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section-padding bg-body-tertiary" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <header class="mb-4">
+          <h2 id="sobre-titulo" class="section-title">Sobre</h2>
+          <p class="text-body-secondary">Quem sou, o que sei e onde me encontrar.</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-lg-7">
+            <h3 class="h5 mb-3">Perfil profissional</h3>
+            <p>
+              Sou <strong>Victor Hugo Doracio</strong>, Trainee TIC em transição para o
+              desenvolvimento frontend. Tenho interesse em construir interfaces claras,
+              responsivas e acessíveis, unindo boas práticas de HTML semântico, CSS moderno
+              e JavaScript puro. Estou em constante aprendizado e valorizo organização,
+              comunicação e trabalho em equipe.
+            </p>
+            <p class="text-body-secondary small">
+              Meus conhecimentos complementares em Python, Java e SQL ampliam minha visão
+              sobre integração e dados, mas mantenho meu foco principal na experiência
+              do usuário e no desenvolvimento web.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-5">
+            <h3 class="h6 text-uppercase text-body-secondary mb-2">Hard Skills</h3>
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-4" aria-label="Hard skills">
+              <li><span class="badge skill-badge badge-hard">HTML5</span></li>
+              <li><span class="badge skill-badge badge-hard">CSS3</span></li>
+              <li><span class="badge skill-badge badge-hard">JavaScript</span></li>
+              <li><span class="badge skill-badge badge-hard">Python</span></li>
+              <li><span class="badge skill-badge badge-hard">Java</span></li>
+              <li><span class="badge skill-badge badge-hard">SQL</span></li>
+            </ul>
+
+            <h3 class="h6 text-uppercase text-body-secondary mb-2">Soft Skills</h3>
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-4" aria-label="Soft skills">
+              <li><span class="badge skill-badge badge-soft">Comunicação</span></li>
+              <li><span class="badge skill-badge badge-soft">Trabalho em Equipe</span></li>
+              <li><span class="badge skill-badge badge-soft">Organização</span></li>
+              <li><span class="badge skill-badge badge-soft">Criatividade</span></li>
+            </ul>
+
+            <h3 class="h6 text-uppercase text-body-secondary mb-2">Links</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://github.com/VictorDoracio" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer"
+                 aria-label="GitHub de Victor Hugo Doracio">
+                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/victor-hugo-doracio/" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer"
+                 aria-label="LinkedIn de Victor Hugo Doracio">
+                <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+              </a>
+              <a href="mailto:victormad802@gmail.com" class="btn btn-sm btn-outline-secondary"
+                 aria-label="Enviar e-mail para Victor Hugo Doracio">
+                <i class="bi bi-envelope" aria-hidden="true"></i> E-mail
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREAS DO CONHECIMENTO -->
+    <section id="areas" class="section-padding" aria-labelledby="areas-titulo">
+      <div class="container">
+        <header class="mb-4">
+          <h2 id="areas-titulo" class="section-title">Áreas do Conhecimento</h2>
+          <p class="text-body-secondary">
+            Como diferentes áreas contribuíram para minha lógica de programação.
+          </p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-people fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Ciências Humanas</h3>
+                </div>
+                <p class="card-text mb-0">
+                  O estudo das relações sociais e da comunicação desenvolveu minha empatia
+                  para entender as necessidades do usuário. A habilidade de interpretar
+                  contextos históricos e culturais me ajuda a projetar interfaces mais
+                  inclusivas e a traduzir requisitos complexos em soluções de software claras.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-globe-americas fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Ciências da Natureza</h3>
+                </div>
+                <p class="card-text mb-0">
+                  A observação de fenômenos e a busca por padrões me ensinaram a investigar
+                  problemas de forma sistemática. O método científico (formular hipóteses,
+                  testar e validar) é a base do meu processo de depuração (debugging)
+                  e da experimentação de novas soluções técnicas.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-calculator fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Matemática</h3>
+                </div>
+                <p class="card-text mb-0">
+                  O raciocínio lógico-matemático estruturou minha forma de decompor
+                  problemas complexos em etapas menores e solucionáveis. Conceitos como
+                  funções, laços e estruturas de dados (listas, arrays) tornaram-se
+                  naturais, facilitando a criação de algoritmos eficientes.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-chat-quote fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Linguagens</h3>
+                </div>
+                <p class="card-text mb-0">
+                  A leitura e a escrita aprimoraram minha capacidade de comunicação
+                  técnica. Isso se reflete em código limpo, na escolha de nomes
+                  significativos para variáveis e na escrita de documentações claras,
+                  além de facilitar a leitura e manutenção de código de terceiros.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENDÊNCIAS TECNOLÓGICAS -->
+    <section id="tendencias" class="section-padding bg-body-tertiary" aria-labelledby="tendencias-titulo">
+      <div class="container">
+        <header class="mb-4">
+          <h2 id="tendencias-titulo" class="section-title">Tendências Tecnológicas</h2>
+          <p class="text-body-secondary">Resumos técnicos sobre temas em destaque.</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-shield-lock fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Cibersegurança</h3>
+                </div>
+                <p class="card-text mb-0">
+                  Conjunto de práticas para proteger sistemas, redes e dados contra ameaças
+                  digitais. Envolve autenticação, criptografia e gestão de vulnerabilidades.
+                  Princípios como menor privilégio e defesa em profundidade garantem que
+                  aplicações web resistam a ataques comuns como XSS e SQL Injection.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-link-45deg fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Blockchain</h3>
+                </div>
+                <p class="card-text mb-0">
+                  Registro distribuído e imutável que usa hashes encadeados e consenso entre
+                  nós para garantir integridade. Aplicado em criptomoedas, contratos
+                  inteligentes e rastreabilidade de cadeias de suprimentos. O conceito de
+                  imutabilidade inspira novas formas de auditoria de dados.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-robot fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Automação / Robótica</h3>
+                </div>
+                <p class="card-text mb-0">
+                  Integração de sensores, atuadores e software para executar tarefas com
+                  mínima intervenção humana. Combina controle, visão computacional e IA para
+                  aumentar eficiência em indústria, logística e serviços. No frontend, a
+                  automação de testes e processos (CI/CD) é um reflexo dessa tendência.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <article class="card h-100 shadow-sm area-card">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-cpu fs-4 text-primary" aria-hidden="true"></i>
+                  <h3 class="h5 mb-0">Edge Computing</h3>
+                </div>
+                <p class="card-text mb-0">
+                  Modelo que processa dados próximo à origem (dispositivos e gateways),
+                  reduzindo latência e tráfego de rede. Essencial para IoT, veículos
+                  autônomos e aplicações em tempo real. Para o desenvolvimento web,
+                  reflete-se na otimização de performance e no uso de CDNs e Service Workers.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA DE PROJETOS -->
+    <section id="projetos" class="section-padding" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <header class="mb-4">
+          <h2 id="projetos-titulo" class="section-title">Projetos</h2>
+          <p class="text-body-secondary">Seleção de projetos com repositório e, quando disponível, demonstração.</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card h-100 shadow-sm project-card">
+              <img src="assets/img/projeto-1.png"
+                   class="card-img-top project-thumb"
+                   alt="Screenshot do projeto Currículo HTML" loading="lazy" width="600" height="338">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Currículo HTML</h3>
+                <p class="card-text small text-body-secondary flex-grow-1">
+                  Currículo profissional em HTML.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 1">
+                  <li><span class="badge text-bg-secondary">HTML5</span></li>
+                </ul>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/VictorDoracio/atividades-html/tree/main/curriculo" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer"
+                     aria-label="Repositório do projeto Currículo HTML">
+                    <i class="bi bi-github" aria-hidden="true"></i> Repositório
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card h-100 shadow-sm project-card">
+              <img src="assets/img/projeto-2.png"
+                   class="card-img-top project-thumb"
+                   alt="Screenshot do projeto Quebra de Linhas" loading="lazy" width="600" height="338">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Quebra de Linhas</h3>
+                <p class="card-text small text-body-secondary flex-grow-1">
+                  Atividade experimental sobre formatação de texto em HTML.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 2">
+                  <li><span class="badge text-bg-secondary">HTML5</span></li>
+                </ul>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/VictorDoracio/atividades-html/tree/main/quebras" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer"
+                     aria-label="Repositório do projeto Quebra de Linhas">
+                    <i class="bi bi-github" aria-hidden="true"></i> Repositório
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card h-100 shadow-sm project-card">
+              <img src="assets/img/projeto-3.png"
+                   class="card-img-top project-thumb"
+                   alt="Screenshot do projeto Teste de Formatação" loading="lazy" width="600" height="338">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Teste de Formatação</h3>
+                <p class="card-text small text-body-secondary flex-grow-1">
+                  Página com demonstrações de diversos métodos de formatação de texto em HTML.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 3">
+                  <li><span class="badge text-bg-secondary">HTML5</span></li>
+                </ul>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/VictorDoracio/atividades-html/tree/main/teste" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer"
+                     aria-label="Repositório do projeto Teste de Formatação">
+                    <i class="bi bi-github" aria-hidden="true"></i> Repositório
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card h-100 shadow-sm project-card">
+              <img src="assets/img/projeto-4.png"
+                   class="card-img-top project-thumb"
+                   alt="Screenshot do projeto Sistema de Pedidos" loading="lazy" width="600" height="338">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h6 card-title">Sistema de Pedidos</h3>
+                <p class="card-text small text-body-secondary flex-grow-1">
+                  Sistema de gerenciamento de pedidos para lanchonete.
+                </p>
+                <ul class="list-unstyled d-flex flex-wrap gap-1 mb-3" aria-label="Tecnologias do projeto 4">
+                  <li><span class="badge text-bg-secondary">Java</span></li>
+                  <li><span class="badge text-bg-secondary">H2</span></li>
+                  <li><span class="badge text-bg-secondary">Spring Boot</span></li>
+                </ul>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="https://github.com/VictorDoracio/Food-You" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer"
+                     aria-label="Repositório do projeto Sistema de Pedidos">
+                    <i class="bi bi-github" aria-hidden="true"></i> Repositório
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section-padding bg-body-tertiary" aria-labelledby="contato-titulo">
+      <div class="container">
+        <header class="mb-4 text-center">
+          <h2 id="contato-titulo" class="section-title">Contato</h2>
+          <p class="text-body-secondary">
+            Envie uma mensagem — ela será salva localmente e disparada via automação.
+          </p>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <form id="contact-form" class="card shadow-sm" novalidate>
+              <div class="card-body p-4">
+                <div class="mb-3">
+                  <label for="contact-nome" class="form-label">Nome completo <span class="text-danger" aria-hidden="true">*</span></label>
+                  <input type="text" class="form-control" id="contact-nome" name="nome"
+                         required minlength="2" maxlength="80" autocomplete="name"
+                         placeholder="Seu nome completo">
+                  <div class="invalid-feedback">Informe seu nome (mínimo 2 caracteres).</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-email" class="form-label">E-mail <span class="text-danger" aria-hidden="true">*</span></label>
+                  <input type="email" class="form-control" id="contact-email" name="email"
+                         required maxlength="120" autocomplete="email"
+                         placeholder="voce@exemplo.com">
+                  <div class="invalid-feedback">Informe um e-mail válido.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-assunto" class="form-label">Assunto <span class="text-danger" aria-hidden="true">*</span></label>
+                  <input type="text" class="form-control" id="contact-assunto" name="assunto"
+                         required minlength="3" maxlength="120"
+                         placeholder="Sobre o que deseja falar?">
+                  <div class="invalid-feedback">Informe um assunto (mínimo 3 caracteres).</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-mensagem" class="form-label">Mensagem <span class="text-danger" aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="contact-mensagem" name="mensagem"
+                            rows="5" required minlength="10" maxlength="2000"
+                            placeholder="Escreva sua mensagem..."></textarea>
+                  <div class="invalid-feedback">Mensagem deve ter entre 10 e 2000 caracteres.</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg" id="contact-submit">
+                    <i class="bi bi-send" aria-hidden="true"></i> Enviar mensagem
+                  </button>
+                </div>
+
+                <div id="contact-feedback" class="mt-3" role="status" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAINEL ADMINISTRATIVO -->
+    <section id="admin" class="section-padding" aria-labelledby="admin-titulo" hidden>
+      <div class="container">
+        <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+          <div>
+            <h2 id="admin-titulo" class="section-title mb-0">Painel de Mensagens</h2>
+            <p class="text-body-secondary mb-0">
+              Total: <strong id="admin-count">0</strong> mensagem(ns)
+            </p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary" id="admin-export">
+              <i class="bi bi-download" aria-hidden="true"></i> Exportar JSON
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-danger" id="admin-delete-all">
+              <i class="bi bi-trash" aria-hidden="true"></i> Excluir todas
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-dark" id="admin-exit">
+              <i class="bi bi-box-arrow-right" aria-hidden="true"></i> Sair
+            </button>
+          </div>
+        </header>
+
+        <div id="admin-feedback" class="mb-3" role="status" aria-live="polite"></div>
+
+        <div class="table-responsive card shadow-sm">
+          <table class="table table-striped table-hover align-middle mb-0">
+            <caption class="visually-hidden">Lista de mensagens recebidas</caption>
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Assunto</th>
+                <th scope="col">Data</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="text-end">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="admin-messages"></tbody>
+          </table>
+        </div>
+
+        <p id="admin-empty" class="text-center text-body-secondary mt-3" hidden>
+          Nenhuma mensagem cadastrada.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer section-padding pb-3 bg-body-tertiary border-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <button type="button" id="footer-admin-trigger" class="footer-brand btn btn-link p-0 text-decoration-none"
+                  aria-label="Victor Hugo Doracio — Trainee TIC">
+            <span class="brand-badge me-2" aria-hidden="true">VH</span>
+            <span class="fw-bold">Victor Hugo Doracio</span>
+          </button>
+          <p class="text-body-secondary small mt-2 mb-0">Trainee TIC · Desenvolvedor Frontend em formação</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h2 class="h6 text-uppercase text-body-secondary">Redes</h2>
+          <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+
+            <li>
+              <a href="https://github.com/VictorDoracio" class="link-body-emphasis text-decoration-none" target="_blank"
+                 rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/victor-hugo-doracio/" class="link-body-emphasis text-decoration-none" target="_blank"
+                 rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:victormad802@gmail.com" class="link-body-emphasis text-decoration-none"
+                 aria-label="E-mail">
+                <i class="bi bi-envelope" aria-hidden="true"></i> E-mail
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4 text-md-end">
+          <a href="#inicio" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-arrow-up" aria-hidden="true"></i> Voltar ao topo
+          </a>
+        </div>
+      </div>
+
+      <hr class="my-3">
+
+      <p class="text-center text-body-secondary small mb-0">
+        © <span id="footer-year">2024</span> Victor Hugo Doracio — Construído com HTML5, CSS3, JavaScript e Bootstrap.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MODAIS DO PAINEL ADMIN --> 
+  <div class="modal fade" id="adminPasswordModal" tabindex="-1" aria-labelledby="adminPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="admin-password-form">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="adminPasswordModalLabel">Acesso restrito</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-body-secondary small">
+              Esta área é apenas de demonstração e <strong>não oferece segurança real</strong>.
+            </p>
+            <label for="admin-password-input" class="form-label">Senha de demonstração</label>
+            <input type="password" class="form-control" id="admin-password-input" required
+                   autocomplete="off" placeholder="Digite a senha">
+            <div class="invalid-feedback" id="admin-password-error">Senha incorreta.</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="editMessageModal" tabindex="-1" aria-labelledby="editMessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <form id="edit-message-form">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="editMessageModalLabel">Editar mensagem</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="edit-message-id">
+            <div class="mb-3">
+              <p class="mb-1"><strong>De:</strong> <span id="edit-message-from"></span></p>
+              <p class="mb-1"><strong>Assunto:</strong> <span id="edit-message-subject"></span></p>
+              <p class="mb-0"><strong>Data:</strong> <span id="edit-message-date"></span></p>
+            </div>
+            <div class="mb-3">
+              <label class="form-label"><strong>Mensagem</strong></label>
+              <div class="border rounded p-3 bg-body-tertiary" id="edit-message-body"></div>
+            </div>
+            <div class="mb-3">
+              <label for="edit-message-status" class="form-label">Status</label>
+              <select class="form-select" id="edit-message-status">
+                <option value="novo">Novo</option>
+                <option value="em análise">Em análise</option>
+                <option value="respondido">Respondido</option>
+                <option value="arquivado">Arquivado</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="edit-message-notes" class="form-label">Observações</label>
+              <textarea class="form-control" id="edit-message-notes" rows="3"
+                        maxlength="500" placeholder="Anotações internas..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Salvar alterações</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="confirmDeleteModalLabel">Confirmar exclusão</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0" id="confirm-delete-text">Deseja realmente excluir esta mensagem?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger" id="confirm-delete-btn">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
