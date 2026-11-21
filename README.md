@@ -1,6 +1,6 @@
 # Portfólio Web Dinâmico — Victor Hugo Doracio
 
-Portfólio profissional desenvolvido para o processo seletivo de Frontend da Canes Solution. O projeto é uma aplicação web responsiva (Mobile First) com painel administrativo oculto para gestão de mensagens de contato, utilizando apenas HTML5, CSS3, JavaScript puro e Bootstrap 5.
+Portfólio profissional desenvolvido para a atividade final de TI do Senac. O projeto é uma aplicação web responsiva (Mobile First) com painel administrativo oculto para gestão de mensagens de contato, utilizando apenas HTML5, CSS3, JavaScript puro e Bootstrap 5.
 
 ## 🚀 Tecnologias Utilizadas
 
