@@ -11,7 +11,7 @@ Portfólio profissional desenvolvido para a atividade final de TI do Senac. O pr
 - **Bootstrap Icons** (via CDN)
 - **Google Fonts** (Inter e Poppins)
 - **LocalStorage** para persistência de dados
-- **Formspree** (ou similar) para automação de e-mail
+- **Formspree** para automação de e-mail
 
 ## 📁 Estrutura de Arquivos
 
