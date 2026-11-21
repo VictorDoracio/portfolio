@@ -11,7 +11,7 @@ Portfólio profissional desenvolvido para o processo seletivo de Frontend da Can
 - **Bootstrap Icons** (via CDN)
 - **Google Fonts** (Inter e Poppins)
 - **LocalStorage** para persistência de dados
-- **Formspree** (ou similar) para automação de e-mail
+- **Formspree** para automação de e-mail
 
 ## 📁 Estrutura de Arquivos
 
